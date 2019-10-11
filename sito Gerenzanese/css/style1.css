@@ -1,0 +1,120 @@
+html{font-size: 12px; margin:0;}
+body{font-family: 'Roboto', sans-serif; width: 100%; background-color: #fff;}
+a{text-decoration: none;}
+button{
+  visibility: hidden;
+  width: 50%;
+  height: 20%;
+  background-color: #0069b3;
+   border:none;
+     border-radius: 10px;
+     color:#ddd;
+     text-align: center;
+      text-transform: uppercase;
+    }
+    .diverso{
+      visibility: hidden;
+        width: 50%;
+        height: 20%;
+        background-color: #ddd;
+         border:none;
+         color: #000;
+           border-radius: 10px;
+           text-align: center;
+            text-transform: uppercase;
+          }
+
+
+
+.foto{width: 100%;}
+.fotoLogo{width: strecht;}
+.logo{width: 20% ,  opacity:0.3; }
+.container{
+  display: grid;
+  grid-template-columns: 25% auto 25% ;
+  grid-auto-rows: minmax(auto , auto);
+  /* grid-row-gap:  10px; */
+  grid-gap:10px;
+  padding: 10px;
+}
+.container > div {
+  border: 3px solid #0069b3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+}
+h1{text-align: center; color: #000; text-transform:uppercase;}
+hr{width:80%;  border: 2px solid #FF9000; }
+
+.header{
+
+  /* background:   url(../img/cover.jpg) ; */
+  grid-column: 1/4;
+    grid-row: auto;
+}
+.notizie{
+  /* color: #fff;
+  background-color: #0069b3; */
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 10;
+}
+.prima{
+  /* color: #fff;
+  background-color: #0069b3; */
+  align-items: : center;
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.classificap{grid-column: 3; grid-row: 2; }
+.prossimap{grid-column: 3; grid-row: 3;}
+.juniores h1{color:#fff;}
+.juniores{
+  color: #fff;
+  background-color: #0069b3;
+  grid-column: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.classificaj{grid-column: 3; grid-row: 4;}
+.prossimaj{grid-column: 3; grid-row: 5;}
+.junioresu{
+  grid-column: 2;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+.classificau{grid-column: 3; grid-row: 6;}
+.prossimau{grid-column: 3; grid-row: 7;}
+.giovanili h1{color: #fff;}
+.giovanili{
+  color: #fff;
+  background-color: #0069b3;
+  grid-column: 2/4;
+  grid-row-start: 8;
+  grid-row-end: 10;
+}
+.giovanili a:hover{color:#fcfcfc; text-transform: uppercase; background-color:#0069b3;}
+
+.sponsor{
+  grid-column: 1/4;
+  grid-row: 10;
+}
+.footer{
+  color: #fff;
+  background-color: #0069b3;
+  grid-column: 1/4;
+  grid-row: 11;
+}
+@media screen and (max-width:800px){
+  .container{display:block;}
+  button{visibility: visible;}
+  .diverso{visibility: visible;}
+  .classificap, .prossimap, .classificaj, .prossimaj, .classificau, .prossimau{ display: none;}
+  .container > div {
+    border: 1px solid #0069b3;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    }
+}
